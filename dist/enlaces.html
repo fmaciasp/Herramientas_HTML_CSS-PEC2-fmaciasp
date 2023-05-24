@@ -10,17 +10,21 @@
   <body>
     <div class="intro_pagina">
         <header>
-            <a href="/index.html">
-                <img src="/escudo_cadiz.813ffd2e.png" alt="Cádiz">
+            <a class="img_link" href="/index.html">
+                <picture>
+                    <source media="(min-width: 821px)" srcset="/logo-negro.c46946b3.svg">
+                    <source media="(min-width: 390px)" srcset="/logo-negro-small.73526b57.svg">
+                    <img src="/logo-negro.c46946b3.svg" srcset="/logo-negro.c46946b3.svg 2x" alt="Logo Cádiz">
+                </picture>
             </a>
+            <nav class="nav_detalle">
+                <ul>
+                    <li><a href="/presentacion.html">Presentación</a></li>
+                    <li><a href="/categorias.html">Atractivos</a></li>
+                    <li><a href="/enlaces.html">Enlaces</a></li>
+                </ul>
+              </nav>
         </header>
-        <nav class="nav_detalle">
-            <ul>
-                <li><a href="/presentacion.html">Presentación</a></li>
-                <li><a href="/categorias.html">Atractivos</a></li>
-                <li><a href="/enlaces.html">Enlaces</a></li>
-            </ul>
-          </nav>
     </div>
     <main>
         <article>
@@ -43,16 +47,34 @@
                 <li><a href="https://www.spanishincadiz.com/es/cadiz/historia-cadiz">https://www.spanishincadiz.com/es/cadiz/historia-cadiz</a></li>
                 <li><a href="https://andaluciainformacion.es/cadiz/1175478/el-congreso-internacional-de-la-lengua-de-cadiz-presentado-en-el-ministerio-de-exteriores/">https://andaluciainformacion.es/cadiz/1175478/el-congreso-internacional-de-la-lengua-de-cadiz-presentado-en-el-ministerio-de-exteriores/</a></li>
                 <li><a href="https://www.casareal.es/ES/Actividades/Paginas/actividades_actividades_detalle.aspx?data=15675">https://www.casareal.es/ES/Actividades/Paginas/actividades_actividades_detalle.aspx?data=15675</a></li>
+                <li><a href="https://cadiz.cosasdecome.es/recetas-tipicas-cadiz">https://cadiz.cosasdecome.es/recetas-tipicas-cadiz</a></li>
             </ul>
         </article>
     </main>
     <footer>
+        <a class="img_link" href="/index.html">
+        <picture>
+          <img src="/logo-negro.c46946b3.svg" srcset="/logo-negro.c46946b3.svg" alt="Logo Cádiz">
+        </picture>
+        </a>
+        <div class="enlaces-footer">
+            <ul>
+                <li><p>Presentación</p></li>
+            </ul>
+            <ul>
+                <li><p>Atractivos</p></li>
+                <li><a title="Enlace a playas" href="/playas.html">Playas</a></li>
+                <li><a title="Enlace a carnaval" href="/carnaval.html">Carnaval</a></li>
+                <li><a title="Enlace a Semana Santa" href="/semana_santa.html">Semana Santa</a></li>
+                <li><a title="Enlace a gastronomía" href="/gastronomia.html">Gastronomía</a></li>
+                <li><a title="Enlace a historia" href="/historia.html">Historia</a></li>
+                <li><a title="Enlace a lengua" href="/lengua.html">Lengua</a></li>
+            </ul>
+            <ul>
+                <li><p>Enlaces</p></li>
+            </ul>
+        </div>
         <address>2023 © Francisco José Macías Periñán</address>
-        <ul>
-            <li><a title="Enlace al aviso legal" href="">Aviso legal</a></li>
-            <li><a title="Enlace a la política de privacidad" href="">Política de privacidad</a></li>
-            <li><a title="Enlace a la política de cookies" href="">Política de cookies</a></li>
-        </ul>
       </footer>
   </body>
 </html>

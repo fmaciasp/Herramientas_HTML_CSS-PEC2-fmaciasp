@@ -3,22 +3,34 @@
   "version": "1.0.0",
   "description": "",
   "source": "src/index.html",
+  "type": "module",
   "scripts": {
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
     "parcel:dev": "parcel",
     "parcel:build": "parcel build",
-    "clean": "rimraf dist .parcel-cache"
+    "clean": "rimraf dist .parcel-cache",
+    "convertir-imagenes": "node convertir_imagenes.js"
   },
   "keywords": [],
   "author": "Francisco José Macías Periñán",
   "license": "ISC",
   "devDependencies": {
+    "assert": "^2.0.0",
+    "events": "^3.3.0",
     "npm-run-all": "^4.1.5",
+    "os-browserify": "^0.3.0",
     "parcel": "^2.8.3",
-    "rimraf": "^5.0.0"
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "rimraf": "^5.0.0",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.5"
   },
   "dependencies": {
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^8.0.0",
+    "ssr-window": "^4.0.2",
     "swiper": "^9.2.4"
   }
 }

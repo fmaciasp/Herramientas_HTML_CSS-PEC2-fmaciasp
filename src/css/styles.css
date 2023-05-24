@@ -10,7 +10,8 @@ html{
 
 header {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
+    padding: 20px 20px 0 20px;
+    width: 100%;
 }
 
 body {
@@ -20,7 +21,6 @@ body {
 nav {
   display: flex;
   justify-content: center;
-  padding: 1rem;
 }
 
 nav ul {
@@ -74,6 +74,7 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: block;
 }
 
 li {
@@ -95,7 +96,7 @@ section {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    padding: 50px 20px;
+    padding: 20px 20px;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
 }
@@ -137,7 +138,7 @@ footer {
 }
 
 address {
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 blockquote{
@@ -199,9 +200,14 @@ blockquote{
     gap: 40px;
 }
 
+.elemento h2 {
+    text-align: center;
+}
+
 .elemento img {
     width: 100%;
-    max-height: 210px;
+    display: flex;
+    margin: auto;
 }
 
 .swiper {
@@ -231,6 +237,30 @@ blockquote{
     display: block;
 }
 
+.img_link img {
+    max-width: 50%;
+    height: auto;
+}
+
+.img-link {
+    display: inline-block;
+}
+
+.img-section{
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    max-width: 15%;
+    height: auto;
+}
+
+.img_destacada {
+    width: 100% !important;
+}
+
+.img_detalle {
+    width: 80%;
+    margin: auto;
+}
+
 #footer-index {
     background-color: transparent;
 }
@@ -243,7 +273,60 @@ blockquote{
     color: white;
 }
 
+@keyframes bounceIn {
+    60% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+.elemento:hover img {
+    animation: bounceIn 1s;
+}
+
+footer a {
+    font-weight: unset;
+    font-size: unset;
+}
+
+.enlaces-footer {
+    display: flex;
+    column-gap: 3rem;
+}
+
+footer p {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.logo {
+    animation: logoAnimation 1s ease-in-out;
+}
+  
+@keyframes logoAnimation {
+    0% {
+        transform: scale(3);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 @media (max-width: 820px) {
+    header {
+        flex: 1;
+        padding: 0;
+    }
+
+    .nav_detalle {
+        flex: 4;
+    }
+
     .body_portada {
         background-image: url('../img/cadiz_responsive.jpeg');
         background-size: auto;
@@ -261,8 +344,17 @@ blockquote{
         width: 80%;
     }
 
+    .swiper {
+        width: 100%;
+        height: auto;
+    }
+
     .intro_pagina {
         width: 80%;
+    }
+
+    nav li {
+        display: list-item;
     }
 
     #footer-index{
@@ -270,7 +362,7 @@ blockquote{
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 415px) {
     section {
         max-width: 65%;
         padding: 20px;
@@ -284,6 +376,15 @@ blockquote{
     .intro_pagina * {
         text-align: center;
         display: block;
+    }
+    .intro_pagina {
+        padding: 1rem 0 0rem;
+        display: flex;
+    }
+
+    .intro_pagina ul {
+        font-size: 0.8rem;
+        display: unset;
     }
 
     h1 {
@@ -314,13 +415,44 @@ blockquote{
 
     nav li {
         margin: 0;
+        flex: 1;
+        display: list-item;
+    }
+
+    .swiper {
+        width: 100%;
+        height: auto;
+    }
+
+    figure {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    figure iframe{
+        width: unset;
+        height: unset;
     }
 
     .lista_categoria {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .enlaces-footer {
+        column-gap: unset;
+    }
+
+    .img_detalle {
+        width: 100%;
+    }
+
+    .img_link {
+        margin-bottom: 0;
+    }
+
     #footer-index {
         position: relative;
     }
+
 }
