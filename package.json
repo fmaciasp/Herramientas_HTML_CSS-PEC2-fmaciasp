@@ -24,13 +24,13 @@
     "path-browserify": "^1.0.1",
     "process": "^0.11.10",
     "rimraf": "^5.0.0",
+    "sharp": "^0.31.3",
     "stream-browserify": "^3.0.0",
     "util": "^0.12.5"
   },
   "dependencies": {
     "imagemin": "^8.0.1",
     "imagemin-webp": "^8.0.0",
-    "sharp": "^0.32.1",
     "ssr-window": "^4.0.2",
     "swiper": "^9.2.4"
   }
