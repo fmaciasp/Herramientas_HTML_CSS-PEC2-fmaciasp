@@ -1,0 +1,24 @@
+{
+  "name": "pec1",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "parcel:dev": "parcel",
+    "parcel:build": "parcel build",
+    "clean": "rimraf dist .parcel-cache"
+  },
+  "keywords": [],
+  "author": "Francisco José Macías Periñán",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.8.3",
+    "rimraf": "^5.0.0"
+  },
+  "dependencies": {
+    "swiper": "^9.2.4"
+  }
+}
