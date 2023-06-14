@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Categorías</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/app.js" async></script>
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
   </head>
   <body>
     <div class="intro_pagina">
       <header>
-          <a class="img_link" href="index.html" title="Ir a la página de inicio">
+          <a class="img_link" href="index.html">
               <picture>
                   <source media="(max-width: 820px)" srcset="img/logo-negro-small.svg">
                   <img src="img/logo-negro.svg" srcset="img/logo-negro.svg 2x" alt="Logo Cádiz">
@@ -53,7 +53,7 @@
             <a href="semana_santa.html">
               <picture>
                 <source type="image/jpeg" srcset="img/semana_santa-small.jpeg">
-                <img src="img/compressed_images/semana_santa-small.webp" alt="Semana Santa gaditana">
+                <img src="img/compressed_images/semana_santa-small.webp" alt="Semana Santa gaditana" loading="lazy">
               </picture>
               <h2>Semana Santa</h2>
             </a>
@@ -63,7 +63,7 @@
             <a href="gastronomia.html">
               <picture>
                 <source type="image/jpeg" srcset="img/gastronomia-small.jpeg">
-                <img src="img/compressed_images/gastronomia-small.webp" alt="Plato de 'pescaito frito'">
+                <img src="img/compressed_images/gastronomia-small.webp" alt="Plato de 'pescaito frito'" loading="lazy">
               </picture>
               <h2>Gastronomía</h2>
             </a>
@@ -73,7 +73,7 @@
             <a href="historia.html">
               <picture>
                 <source type="image/jpeg" srcset="img/historia-small.jpeg">
-                <img src="img/compressed_images/historia-small.webp" alt="Plaza de España de Cádiz">
+                <img src="img/compressed_images/historia-small.webp" alt="Plaza de España de Cádiz" loading="lazy">
               </picture>
               <h2>Historia</h2>
             </a>
@@ -83,7 +83,7 @@
             <a href="lengua.html">
               <picture>
                 <source type="image/jpeg" srcset="img/lengua-small.jpeg">
-                <img src="img/compressed_images/lengua-small.webp" alt="Logo del IX Congreso Internacional de la Lengua Española">
+                <img src="img/compressed_images/lengua-small.webp" alt="Logo del IX Congreso Internacional de la Lengua Española" loading="lazy">
               </picture>
               <h2>Lengua</h2>
             </a>
@@ -92,10 +92,10 @@
         </div>
     </main>
     <footer>
-      <a class="img_link" href="index.html" title="Ir a la página de inicio">
-        <picture>
-          <img src="img/logo-negro.svg" srcset="img/logo-negro.svg" alt="Logo Cádiz">
-        </picture>
+      <a class="img_link" href="index.html">
+      <picture>
+        <img src="img/logo-negro.svg" srcset="img/logo-negro.svg" alt="Logo Cádiz">
+      </picture>
       </a>
       <div class="enlaces-footer">
           <ul>

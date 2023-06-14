@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Carnaval de Cádiz</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/app.js" async></script>
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
   </head>
   <body>
     <div class="intro_pagina">
         <header>
-            <a class="img_link" href="index.html" title="Ir a la página de inicio">
+            <a class="img_link" href="index.html">
                 <picture>
                     <source media="(max-width: 820px)" srcset="img/logo-negro-small.svg">
                     <img src="img/logo-negro.svg" srcset="img/logo-negro.svg 2x" alt="Logo Cádiz">
@@ -35,7 +35,7 @@
                         <source media="(max-width: 415px)" type="image/webp" srcset="img/compressed_images/garabatos-small.webp">
                         <source media="(max-width: 415px)" type="image/jpeg" srcset="img/garabatos-small.jpeg">
                         <source type="image/jpeg" srcset="img/garabatos.jpeg">
-                        <img src="img/compressed_images/garabatos.webp" alt="Coro los Garabatos">
+                        <img src="img/compressed_images/garabatos.webp" alt="Coro los Garabatos" loading="lazy">
                     </picture>
                     <figcaption>Coro los Garabatos</figcaption>
                 </figure>
@@ -46,7 +46,7 @@
             </p>
             <div class="img_detalle">
                 <figure>
-                    <img src="img/falla.jpeg" alt="Gran Teatro Falla">
+                    <img src="img/falla.jpeg" alt="Gran Teatro Falla" loading="lazy">
                     <figcaption>Gran Teatro Falla</figcaption>
                 </figure>
             </div>
@@ -59,19 +59,19 @@
                     <div class="swiper-slide">
                         <picture>
                             <source srcset="img/falla1.jpeg" type="image/jpeg" />
-                            <img src="img/compressed_images/falla1.webp" alt="">
+                            <img src="img/compressed_images/falla1.webp" alt="" loading="lazy">
                         </picture>
                     </div>
                     <div class="swiper-slide">
                         <picture>
                             <source srcset="img/falla2.jpeg" type="image/jpeg" />
-                            <img src="img/compressed_images/falla2.webp" alt="">
+                            <img src="img/compressed_images/falla2.webp" alt="" loading="lazy">
                         </picture>
                     </div>
                     <div class="swiper-slide">
                         <picture>
                             <source srcset="img/falla3.jpeg" type="image/jpeg" />
-                            <img src="img/compressed_images/falla3.webp" alt="">
+                            <img src="img/compressed_images/falla3.webp" alt="" loading="lazy">
                         </picture>
                     </div>
                 </div>
@@ -106,10 +106,10 @@
         </article>
     </main>
     <footer>
-        <a class="img_link" href="index.html" title="Ir a la página de inicio">
-            <picture>
-            <img src="img/logo-negro.svg" srcset="img/logo-negro.svg" alt="Logo Cádiz">
-            </picture>
+        <a class="img_link" href="index.html">
+        <picture>
+          <img src="img/logo-negro.svg" srcset="img/logo-negro.svg" alt="Logo Cádiz">
+        </picture>
         </a>
         <div class="enlaces-footer">
             <ul>
