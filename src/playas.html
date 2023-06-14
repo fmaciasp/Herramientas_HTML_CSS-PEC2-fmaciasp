@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Playas de Cádiz</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/app.js" async></script>
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
   </head>
   <body>
     <div class="intro_pagina">
         <header>
-            <a class="img_link" href="index.html" title="Ir a la página de inicio">
+            <a class="img_link" href="index.html">
                 <picture>
                     <source media="(max-width: 820px)" srcset="img/logo-negro-small.svg">
                     <img src="img/logo-negro.svg" srcset="img/logo-negro.svg 2x" alt="Logo Cádiz">
@@ -48,7 +48,7 @@
                 <figure>
                     <picture>
                         <source srcset="img/playa_victoria.jpeg?as=webp" type="image/webp" />
-                        <img src="img/playa_victoria.jpeg" alt="Playa de la Victoria">
+                        <img src="img/playa_victoria.jpeg" alt="Playa de la Victoria" loading="lazy">
                     </picture>
                     <figcaption>Playa de la Victoria, Cádiz</figcaption>
                 </figure>
@@ -64,19 +64,19 @@
                     <div class="swiper-slide">
                         <picture>
                             <source srcset="img/victoria_sta_maria.jpeg" type="image/jepg" />
-                            <img src="img/compressed_images/victoria_sta_maria.webp" alt="">
+                            <img src="img/compressed_images/victoria_sta_maria.webp" alt="" loading="lazy">
                         </picture>
                     </div>
                     <div class="swiper-slide">
                         <picture>
                             <source srcset="img/hermosa-foto-amanecer-orilla-mar-zahora-espana.jpeg" type="image/jpeg" />
-                            <img src="img/compressed_images/hermosa-foto-amanecer-orilla-mar-zahora-espana.webp" alt="">
+                            <img src="img/compressed_images/hermosa-foto-amanecer-orilla-mar-zahora-espana.webp" alt="" loading="lazy">
                         </picture>
                     </div>
                     <div class="swiper-slide">
                         <picture>
                             <source srcset="img/playa.jpeg" type="image/jpeg" />
-                            <img src="img/compressed_images/playa.webp" alt="">
+                            <img src="img/compressed_images/playa.webp" alt="" loading="lazy">
                         </picture>
                     </div>
                 </div>
@@ -103,10 +103,10 @@
         </article>
     </main>
     <footer>
-        <a class="img_link" href="index.html" title="Ir a la página de inicio">
-            <picture>
-            <img src="img/logo-negro.svg" srcset="img/logo-negro.svg" alt="Logo Cádiz">
-            </picture>
+        <a class="img_link" href="index.html">
+        <picture>
+          <img src="img/logo-negro.svg" srcset="img/logo-negro.svg" alt="Logo Cádiz">
+        </picture>
         </a>
         <div class="enlaces-footer">
             <ul>
