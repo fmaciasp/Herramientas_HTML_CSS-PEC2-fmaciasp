@@ -412,6 +412,10 @@ footer p {
         display: unset;
     }
 
+    nav li a{
+        height: 48px !important;
+    }
+
     h1 {
         font-size: 1.5em;
     }
