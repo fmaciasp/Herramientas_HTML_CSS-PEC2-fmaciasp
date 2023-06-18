@@ -1,4 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+@font-face {
+    font-family: 'Inter';
+    font-weight: 400;
+    src: url('../font/Inter/Inter-Regular.woff2') format('woff2'),
+        url('../font/Inter/Inter-Regular.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter-bold';
+    font-weight: bold;
+    src: url('../font/Inter/Inter-Bold.woff2') format('woff2'),
+        url('../font/Inter/Inter-Bold.woff') format('woff');
+    font-display: swap;
+}
 
 *{
     box-sizing: border-box;
@@ -147,6 +160,10 @@ blockquote{
     padding: 1rem;
 }
 
+lite-youtube {
+    margin: auto;
+}
+
 .nav_detalle{
     position: relative;
     flex: auto;
@@ -171,6 +188,12 @@ blockquote{
     margin: 0px;
 }
 
+@supports (background-image: url('../img/compressed_images/cadiz.webp')) {
+    .body_portada {
+        background-image: url('../img/compressed_images/cadiz.webp');
+    }
+}
+
 .pasodoble_portada{
     columns: 2;
     column-gap: 2rem;
@@ -192,6 +215,7 @@ blockquote{
 
 .img_detalle img {
     width: 100%;
+    height: auto;
 }
 
 .lista_categoria {
@@ -206,6 +230,7 @@ blockquote{
 
 .elemento img {
     width: 100%;
+    height: auto;
     display: flex;
     margin: auto;
 }
@@ -407,6 +432,7 @@ footer p {
 
     footer ul li {
         margin-bottom: 5px;
+        height: 48px;
     }
 
     h2 {
@@ -416,6 +442,7 @@ footer p {
     nav li {
         margin: 0;
         flex: 1;
+        height: 48px !important;
         display: list-item;
     }
 
@@ -430,7 +457,7 @@ footer p {
         margin: auto;
     }
 
-    figure iframe{
+    figure > * {
         width: unset;
         height: unset;
     }

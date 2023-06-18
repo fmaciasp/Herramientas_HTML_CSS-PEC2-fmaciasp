@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Carnaval de Cádiz. De Interés Turístico Internacional">
     <title>Carnaval de Cádiz</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../node_modules/lite-youtube-embed/src/lite-yt-embed.css" />
+    <script src="../node_modules/lite-youtube-embed/src/lite-yt-embed.js" async></script>
     <script type="module" src="js/app.js" async></script>
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
   </head>
@@ -14,7 +17,7 @@
             <a class="img_link" href="index.html">
                 <picture>
                     <source media="(max-width: 820px)" srcset="img/logo-negro-small.svg">
-                    <img src="img/logo-negro.svg" srcset="img/logo-negro.svg 2x" alt="Logo Cádiz">
+                    <img src="img/logo-negro.svg" srcset="img/logo-negro.svg 2x" alt="Logo Cádiz" width="292" height="122">
                 </picture>
             </a>
             <nav class="nav_detalle">
@@ -35,7 +38,7 @@
                         <source media="(max-width: 415px)" type="image/webp" srcset="img/compressed_images/garabatos-small.webp">
                         <source media="(max-width: 415px)" type="image/jpeg" srcset="img/garabatos-small.jpeg">
                         <source type="image/jpeg" srcset="img/garabatos.jpeg">
-                        <img src="img/compressed_images/garabatos.webp" alt="Coro los Garabatos" loading="lazy">
+                        <img src="img/compressed_images/garabatos.webp" alt="Coro los Garabatos" width="1005" height="670">
                     </picture>
                     <figcaption>Coro los Garabatos</figcaption>
                 </figure>
@@ -46,7 +49,7 @@
             </p>
             <div class="img_detalle">
                 <figure>
-                    <img src="img/falla.jpeg" alt="Gran Teatro Falla" loading="lazy">
+                    <img src="img/falla.jpeg" alt="Gran Teatro Falla" loading="lazy" width="788" height="539">
                     <figcaption>Gran Teatro Falla</figcaption>
                 </figure>
             </div>
@@ -59,19 +62,19 @@
                     <div class="swiper-slide">
                         <picture>
                             <source srcset="img/falla1.jpeg" type="image/jpeg" />
-                            <img src="img/compressed_images/falla1.webp" alt="" loading="lazy">
+                            <img src="img/compressed_images/falla1.webp" alt="" loading="lazy" width="600" height="400">
                         </picture>
                     </div>
                     <div class="swiper-slide">
                         <picture>
                             <source srcset="img/falla2.jpeg" type="image/jpeg" />
-                            <img src="img/compressed_images/falla2.webp" alt="" loading="lazy">
+                            <img src="img/compressed_images/falla2.webp" alt="" loading="lazy" width="600" height="400">
                         </picture>
                     </div>
                     <div class="swiper-slide">
                         <picture>
                             <source srcset="img/falla3.jpeg" type="image/jpeg" />
-                            <img src="img/compressed_images/falla3.webp" alt="" loading="lazy">
+                            <img src="img/compressed_images/falla3.webp" alt="" loading="lazy" width="600" height="400">
                         </picture>
                     </div>
                 </div>
@@ -93,22 +96,17 @@
             </p>
             
             <figure>
-                <iframe 
-                width="560" 
-                height="315" 
-                src="https://www.youtube.com/embed/1-wE-2cRTx4" 
-                title="YouTube video player" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-            </iframe>
-            </figure>   
+                <lite-youtube videoid="1-wE-2cRTx4" playlabel="Coro los Garabatos"></lite-youtube> 
+            </figure>
+
+            
             
         </article>
     </main>
     <footer>
         <a class="img_link" href="index.html">
         <picture>
-          <img src="img/logo-negro.svg" srcset="img/logo-negro.svg" alt="Logo Cádiz">
+          <img src="img/logo-negro.svg" srcset="img/logo-negro.svg" alt="Logo Cádiz" width="292" height="122">
         </picture>
         </a>
         <div class="enlaces-footer">

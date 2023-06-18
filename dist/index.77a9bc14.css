@@ -1,4 +1,17 @@
-@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap";
+@font-face {
+  font-family: Inter;
+  font-weight: 400;
+  src: url("Inter-Regular.a9c40ff3.woff2") format("woff2"), url("Inter-Regular.9c6f6874.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter-bold;
+  font-weight: bold;
+  src: url("Inter-Bold.31e8902e.woff2") format("woff2"), url("Inter-Bold.c3efeb24.woff") format("woff");
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -145,6 +158,10 @@ blockquote {
   font-style: italic;
 }
 
+lite-youtube {
+  margin: auto;
+}
+
 .nav_detalle {
   flex: auto;
   position: relative;
@@ -169,6 +186,12 @@ blockquote {
   margin: 0;
 }
 
+@supports (background-image: url('../img/compressed_images/cadiz.webp')) {
+  .body_portada {
+    background-image: url("cadiz.14d23a5a.webp");
+  }
+}
+
 .pasodoble_portada {
   columns: 2;
   column-gap: 2rem;
@@ -190,6 +213,7 @@ blockquote {
 
 .img_detalle img {
   width: 100%;
+  height: auto;
 }
 
 .lista_categoria {
@@ -204,6 +228,7 @@ blockquote {
 
 .elemento img {
   width: 100%;
+  height: auto;
   margin: auto;
   display: flex;
 }
@@ -403,6 +428,7 @@ footer p {
   }
 
   footer ul li {
+    height: 48px;
     margin-bottom: 5px;
   }
 
@@ -414,6 +440,7 @@ footer p {
     flex: 1;
     margin: 0;
     display: list-item;
+    height: 48px !important;
   }
 
   .swiper {
@@ -427,7 +454,7 @@ footer p {
     margin: auto;
   }
 
-  figure iframe {
+  figure > * {
     width: unset;
     height: unset;
   }

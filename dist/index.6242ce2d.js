@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"6fRhY":[function(require,module,exports) {
+})({"lSfus":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "d7fe96c059a40e7a";
+module.bundle.HMR_BUNDLE_ID = "3d7ea8856242ce2d";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -8597,6 +8597,6 @@ function EffectCards({ swiper , extendParams , on  }) {
 }
 exports.default = EffectCards;
 
-},{"../../shared/create-shadow.js":"9JYAP","../../shared/effect-init.js":"5DnvG","../../shared/effect-target.js":"eKqS8","../../shared/effect-virtual-transition-end.js":"VhYFx","../../shared/utils.js":"dbikn","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["6fRhY","8lRBv"], "8lRBv", "parcelRequire3c64")
+},{"../../shared/create-shadow.js":"9JYAP","../../shared/effect-init.js":"5DnvG","../../shared/effect-target.js":"eKqS8","../../shared/effect-virtual-transition-end.js":"VhYFx","../../shared/utils.js":"dbikn","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["lSfus","8lRBv"], "8lRBv", "parcelRequire3c64")
 
-//# sourceMappingURL=index.59a40e7a.js.map
+//# sourceMappingURL=index.6242ce2d.js.map
